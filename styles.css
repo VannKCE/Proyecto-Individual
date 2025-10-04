@@ -1,3 +1,57 @@
+body {
+    background-color:lavender;
+}
+
 h1 {
-    color:blue;
+    color:darkslateblue;
+    font-style: italic;
+    font-weight: bolder;
+    text-align:start;
+}
+
+h2 {
+    color:darkslateblue;
+}
+
+p {
+    font-style: normal;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color:mediumpurple;
+}
+
+img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+ul {
+    color: black;
+}
+
+fieldset {
+    border: 2px solid darkslateblue;
+}
+
+legend {
+    color: darkslateblue;
+}
+
+button {
+    background-color: lightslategray;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
