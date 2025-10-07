@@ -1,57 +1,56 @@
 body {
-    background-color:lavender;
+  font-family: 'Sentient', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #E9ECF1; 
+  color: #27374D;
+  text-align: center;
 }
 
-h1 {
-    color:darkslateblue;
-    font-style: italic;
-    font-weight: bolder;
-    text-align:start;
+header {
+  background-color: #1B263B;
+  color: #E9ECF1;
+  padding: 3rem 1rem 2rem;
+  border-bottom: 2px solid #3E4C66; 
 }
 
-h2 {
-    color:darkslateblue;
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 1rem;
 }
 
-p {
-    font-style: normal;
+.card {
+  background-color: #F4F6F8;
+  width: 250px;
+  padding: 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 3px 8px rgba(27, 38, 59, 0.08);
+  transition: 0.3s;
+  border: 1px solid #C7D0DD;
 }
 
-table {
-    border-collapse: collapse;
-    width: 90%;
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(27, 38, 59, 0.2);
+  background-color: #DCE3ED; 
 }
 
-th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: center;
+.card h2 {
+  color: #1B263B; 
 }
 
-th {
-    background-color:mediumpurple;
+.card p {
+  color: #3E4C66; 
 }
 
-img {
-    width: 100px;
-    border-radius: 10px;
+footer {
+  background-color: #27374D; 
+  padding: 1rem;
+  color: #C7D0DD;
+  font-size: 0.9rem;
+  border-top: 1px solid #3E4C66;
 }
 
-ul {
-    color: black;
-}
-
-fieldset {
-    border: 2px solid darkslateblue;
-}
-
-legend {
-    color: darkslateblue;
-}
-
-button {
-    background-color: lightslategray;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-}

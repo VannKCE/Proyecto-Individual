@@ -9,109 +9,28 @@
 <body>
     <header>
         <h1>¡Hola! Soy Vanne</h1>
-        <p>Bueno me llamo Vanessa, pero prefiero me llamen Vanne o Vann</p>    
-        <p>Soy una persona relajada, me gusta aprender cosas nuevas y; disfrutar del tiempo libre y la naturaleza.</p>  
-        <p>Este es mi pequeño espacio personal :).</p>
+        <h2>Conóceme</h2>
     </header>
-    <hr>
-    <main>
-        <section>
-            <h2>Mis Gustos</h2>
-            <ul>
-                <li>Música: Pop, Rock, Urbano y un poquito de todo</li>
-                <li>Películas Favoritas</li>
-                    <table border="1">
-                        <tr>
-                            <th>Título</th>
-                            <th>Género</th>
-                            <th>Lo que más me gusta</th>
-                            <th>Portada</th>
-                        </tr>
-                        <tr>
-                            <td>Orgullo y Prejuicio</td>
-                            <td>Novela / Romanticismo</td>
-                            <td>La historia de amor clásica y los diálogos</td>
-                            <td><img src="imagenes/ORCULLO_PREJUICIO.png" width="100" alt="Orgullo y Prejuicio"></td>
-                        </tr>
-                        <tr>
-                            <td>La bella y la bestia</td>
-                            <td>Fantasía</td>
-                            <td>La música y el mensaje que da.</td>
-                            <td><img src="imagenes/BELLA_BESTIA.png" width="100" alt="La Bella y la Bestia"></td>
-                        </tr>
-                        <tr>
-                            <td>Mulán</td>
-                            <td>Aventura</td>
-                            <td>La valentía</td>
-                            <td><img src="imagenes/MULAN.png" width="100" alt="Mulán"></td>
-                        </tr>
-                    </table>
-                <li>Comida favorita: Pizza y helado</li>
-            </ul>
-        </section>
-        <hr>
-        <section>
-            <h2>Mis Aficiones</h2>
-            <ul>
-                <li>Pintar
-                    <ul>
-                        <li>Acuarela</li>
-                        <li>Óleo</li>
-                        <li>Digital</li>
-                    </ul>
-                </li>
-                <li>Bailar</li>
-                <li>Tocar Piano</li>
-                <li>Escuchar música</li>
-                <li>Mirar dibujitos</li>
-            </ul>
-        </section>
-        <hr>
-        <section id = "metas">
-            <h2>Mis Metas y Deseos</h2>
-            <ul>
-                <li>Terminar mis estudios</li>
-                <li>Viajar</li>
-                <li>Aprender aún más</li>
-                <li>Disfrutar cada día</li>
-                <li>Aprender a tocar el violin</li>
-                <li>Jugar tenis o básquet</li>
-                <li>Ir a más conciertos</li>
-                <li>Aprender fotografía</li>
-                <li>Escribir un blog personal y también un libro</li>
-            </ul>
-        </section>
 
-        <section id="conéctemos">
-                <fieldset>
-                    <legend><b>Conéctate conmigo</b></legend>
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre"><br><br>
+    <main class="cards-container">
+        <div class="card" onclick="location.href='hobbies.html'">
+            <h2>Hobbies</h2>
+            <p>Aprender, jugar, explorar la naturaleza</p>
+        </div>
 
-                    <label for="email">Correo electrónico:</label><br>
-                    <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com"><br><br>
+        <div class="card" onclick="location.href='peliculas.html'">
+            <h2>Películas</h2>
+            <p>Mis películas y series favoritas</p>
+        </div>
 
-                    <label for="mensaje">Cuéntame algo de ti:</label><br>
-                    <textarea id="mensaje" name="mensaje" rows="4" cols="40" required placeholder="Escribe tu mensaje aquí..."></textarea><br><br>
-
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Restablecer</button>
-                </fieldset>
-            </form>
-        </section>
-
+        <div class="card" onclick="location.href='conectemos.html'">
+            <h2>💌 Conectemos</h2>
+            <p>Contáctame o deja tu mensaje</p>
+        </div>
     </main>
-    <hr>
-    <aside>
-        <h2>Algunos Links</h2>
-        <ul>
-            <li><a href="https://open.spotify.com" target="_blank">Mi música en Spotify</a></li>
-        </ul>
-    </aside>
 
     <footer>
-        <p>© 2025 Blog Personal</p>
+        <p>© 2025 Vanne | Mi pequeño espacio personal 💕</p>
     </footer>
-
 </body>
 </html>
