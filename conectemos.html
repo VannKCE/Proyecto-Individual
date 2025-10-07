@@ -4,27 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="conectemos.css">
 </head>
 <body>
     <header>
 
     </header>
     <main>
-        <section id="conéctemos">
-                <fieldset>
-                    <legend><b>Conéctate conmigo</b></legend>
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre"><br><br>
+        <section>
+            <form>
+                    <h2>Conéctate conmigo</h2>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
 
-                    <label for="email">Correo electrónico:</label><br>
-                    <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com"><br><br>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
 
-                    <label for="mensaje">Cuéntame algo de ti:</label><br>
-                    <textarea id="mensaje" name="mensaje" rows="4" cols="40" required placeholder="Escribe tu mensaje aquí..."></textarea><br><br>
+                    <label for="mood">¿Cómo te sientes hoy?</label>
+                    <select id="mood" name="mood">
+                    <option value="">Selecciona...</option>
+                    <option value="Feliz">Feliz</option>
+                    <option value="Pensativo">Pensativo</option>
+                    <option value="Tranquilo">Tranquilo</option>
+                    <option value="Motivado">Motivado</option>
+                    <option value="Cansado">Cansado</option>
+                    </select>
+
+                    <label for="mensaje">Cuéntame algo de ti:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="40" required placeholder="Escribe tu mensaje aquí..."></textarea>
 
                     <button type="submit">Enviar</button>
                     <button type="reset">Restablecer</button>
-                </fieldset>
+               
             </form>
         </section>
 
