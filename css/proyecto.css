@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    width: 100%;
+}
+    
+.div1 {
+    grid-column: span 5 / span 5;
+}
+
+.div2 {
+    grid-column: span 5 / span 5;
+    grid-row: span 3 / span 3;
+    grid-row-start: 2;
+}
+
+.div3 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 5;
+}
+        
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+header {
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.frase {
+    letter-spacing: 0.4em;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+nav {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    margin: 0 20px;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    border-right: 1px solid #ccc;
+    padding: 20px 40px;
+}
+
+.menu li:last-child {
+    border-right: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.redes a {
+  color: #000;
+  font-size: 24px;
+  margin: 0 8px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes a:hover {
+  transform: scale(1.2);
+  color: #E63946;
+}
+
+footer {
+    background-color: #ffffff; 
+    padding: 10px;
+    color: #000000;
+    font-size: 15px;
+    border-top: 1px solid #3E4C66;
+}
+
+@media (max-width: 768px) {
+    nav {
+        margin: 0 10px;
+        padding: 5px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu li {
+        border: none;
+        padding: 5px;
+    }
+
+    .redes {
+        margin-top: 5px;
+    }
+
+    header {
+        padding: 15px 5px;
+    }
+
+    .frase {
+        letter-spacing: 0.2em;
+    }
+}
