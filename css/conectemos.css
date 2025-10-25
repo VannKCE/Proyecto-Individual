@@ -34,7 +34,7 @@ nav {
 
 .menu li {
     border-right: 1px solid #ccc;
-    padding: 0 25px;
+    padding: 20px 40px;
 }
 
 .menu li:last-child {
@@ -45,11 +45,22 @@ nav {
     text-decoration: none;
     color: #000;
     font-size: 18px;
-    transition: color 0.3s ease;
+}
+
+.redes a {
+  color: #000;
+  font-size: 24px;
+  margin: 0 8px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes a:hover {
+  transform: scale(1.2);
+  color: #E63946;
 }
 
 main {
-    padding-top: 80px; 
+    padding-top: 100px; 
 }
 
 form {
