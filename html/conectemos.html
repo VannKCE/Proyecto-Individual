@@ -3,42 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conéctate conmigo</title>
     <link rel="stylesheet" href="../css/conectemos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
-
+        <nav>
+            <ul class="menu">
+                <li><a href="proyecto.html">INICIO</a></li>
+                <li><a href="#">ACERCA DE</a></li>
+                <li><a href="#">MI BLOG</a></li>
+                <li><a href="conectemos.html">EN CONTACTO</a></li>
+                <li class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </li>
+            </ul>
+        </nav>
     </header>
+
+
     <main>
         <section>
             <form>
-                    <h2>Conéctate conmigo</h2>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+                <h2>CONECTATE CONMIGO</h2>
 
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                <label for="nombre">NOMBRE:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
 
-                    <label for="mood">¿Cómo te sientes hoy?</label>
-                    <select id="mood" name="mood">
+                <label for="email">CORREO: </label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+
+                <label for="mood">¿COMO TE SIENTES?</label>
+                <select id="mood" name="mood">
                     <option value="">Selecciona...</option>
                     <option value="Feliz">Feliz</option>
                     <option value="Pensativo">Pensativo</option>
                     <option value="Tranquilo">Tranquilo</option>
                     <option value="Motivado">Motivado</option>
                     <option value="Cansado">Cansado</option>
-                    </select>
+                </select>
 
-                    <label for="mensaje">Cuéntame algo de ti:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" cols="40" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                <label for="mensaje">CUENTAME ALGO DE TI:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="40" required placeholder="Escribe tu mensaje aquí..."></textarea>
 
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Restablecer</button>
-               
+                <button type="submit">Enviar</button>
+                <button type="reset">Restablecer</button>
             </form>
         </section>
-
     </main>
 </body>
 </html>
