@@ -32,10 +32,10 @@ header {
 }
 
 nav {
-    border-top: 1px solid #000000;
-    border-bottom: 1px solid #000000;
+    box-shadow: 0 4px 10px rgba(113, 113, 113, 0.1);
     margin: 0 20px;
     padding: 20px;
+    text-transform: uppercase;
 }
 
 .menu {
@@ -50,7 +50,7 @@ nav {
 
 .menu li {
     border-right: 1px solid #ccc;
-    padding: 20px 40px;
+    padding: 20px 30px;
 }
 
 .menu li:last-child {
@@ -62,11 +62,6 @@ nav {
     color: #000;
     font-size: 14px;
     letter-spacing: 2px;
-}
-
-.redes a {
-    font-size: 24px;
-    margin: 0 8px;
 }
 
 .menu a:hover {
@@ -110,6 +105,18 @@ footer {
     color: #000000;
     font-size: 15px;
     border-top: 1px solid #3E4C66;
+}
+
+.redes a {
+    color: #000;
+    font-size: 24px;
+    margin: 0 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes a:hover {
+    transform: scale(1.2);
+    color: #a0a0a0;
 }
 
 @media (max-width: 768px) {

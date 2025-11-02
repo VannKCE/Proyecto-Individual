@@ -7,6 +7,8 @@ body {
     background-color: #ffffff;
     color: #000000;
     text-align: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -15,18 +17,23 @@ header {
     left: 0;
     width: 100%;
     background-color: #ffffff;
-    border-bottom: 1px solid #000;
-    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(113, 113, 113, 0.1);
 }
 
 nav {
     padding: 15px 0;
 }
 
+
+.titulo {
+    font-weight: bold;
+    margin-right: auto;
+}
+
 .menu {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-end;
+    align-items: flex-end;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -34,29 +41,23 @@ nav {
 
 .menu li {
     border-right: 1px solid #ccc;
-    padding: 20px 40px;
+    padding: 15px 30px;
 }
 
-.menu li:last-child {
+.menu li:last-child, li:first-child{
     border-right: none;
 }
 
 .menu a {
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: 15px;
 }
 
-.redes a {
-  color: #000;
-  font-size: 24px;
-  margin: 0 8px;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.redes a:hover {
-  transform: scale(1.2);
-  color: #E63946;
+.menu li:first-child {
+    padding: 0 20px;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
 }
 
 main {
@@ -107,6 +108,27 @@ button {
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+footer {
+    background-color: #ffffff; 
+    padding: 10px;
+    color: #000000;
+    font-size: 15px;
+    border-top: 1px solid #3E4C66;
+}
+
+
+.redes a {
+    color: #000;
+    font-size: 24px;
+    margin: 0 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes a:hover {
+    transform: scale(1.2);
+    color: #a0a0a0;
 }
 
 @media (max-width: 768px) {
