@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(113, 113, 113, 0.1);
+    z-index: 2000;
+}
+
+nav {
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+nav ul li a.active {
+  color: #000000;
+  font-weight: bolder;
+}
+
+.titulo {
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    border-right: 1px solid #ccc;
+    padding: 15px 30px;
+}
+
+.menu li:last-child, li:first-child{
+    border-right: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+.menu li:first-child {
+    padding: 0 20px;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+main {
+    padding-top: 100px; 
+}
+
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.09);
+}
+
+th {
+    padding: 14px 20px;
+    text-align: left;
+    background: #f7f7f7;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #222;
+    border-bottom: 1px solid #e9e9e9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+td {
+    padding: 14px 20px;
+    font-size: 0.95rem;
+    color: #333;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+tr:hover {
+    background: #fafafa;
+    transform: translateY(-1px);
+    transition: 0.2s;
+}
+
+img {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+
+td img:hover {
+    transform: scale(1.05) rotate(-2deg);
+    filter: grayscale(0%);
+}
+
+footer {
+    background-color: #ffffff; 
+    padding: 10px;
+    color: #000000;
+    font-size: 15px;
+    border-top: 1px solid #3E4C66;
+}
+
+.redes a {
+    color: #000;
+    font-size: 24px;
+    margin: 0 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes a:hover {
+    transform: scale(1.2);
+    color: #a0a0a0;
+}

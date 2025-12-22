@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Artistas</title>
+    <link rel="stylesheet" href="css/musica.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="titulo">VKCE</li>
+                <li><a href="proyecto.html">Inicio</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="miblog.html">Mi blog</a></li>
+                <li><a href="musica.html">Músicas</a></li>
+                <li><a href="peliculas.html">Peliculas</a></li>
+                <li><a href="conectemos.html">En contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="contenido" class="contenido">
+            <section class="artistas">
+                <article class="tarjeta-artista" data-artista="adele">
+                    <h3>Adele</h3>
+                    <p class="subtitulo">Pop / Soul</p>
+                    <p>Voz poderosa y baladas icónicas.</p>
+                    <button class="btn ver-canciones">Ver Canciones</button>
+                </article>
+
+                <article class="tarjeta-artista" data-artista="yatra">
+                    <h3>Sebastián Yatra</h3>
+                    <p class="subtitulo">Pop Latino</p>
+                    <p>Melodías románticas y estilo fresco.</p>
+                    <button class="btn ver-canciones">Ver Canciones</button>
+                </article>
+
+                <article class="tarjeta-artista" data-artista="morat">
+                    <h3>Morat</h3>
+                    <p class="subtitulo">Pop / Folk</p>
+                    <p>Guitarras suaves y letras emotivas.</p>
+                    <button class="btn ver-canciones">Ver Canciones</button>
+                </article>
+
+                <article class="tarjeta-artista" data-artista="camila">
+                    <h3>Camila</h3>
+                    <p class="subtitulo">Pop</p>
+                    <p>Baladas románticas inolvidables.</p>
+                    <button class="btn ver-canciones">Ver Canciones</button>
+                </article>
+
+                <article class="tarjeta-artista" data-artista="airbag">
+                    <h3>Airbag</h3>
+                    <p class="subtitulo">Rock Argentino</p>
+                    <p>Sonido potente y letras intensas.</p>
+                    <button class="btn ver-canciones">Ver Canciones</button>
+                </article>
+
+                <article class="tarjeta-artista" data-artista="alanwalker">
+                    <h3>Alan Walker</h3>
+                    <p class="subtitulo">Electrónica</p>
+                    <p>Beats envolventes y estilo futurista.</p>
+                    <button class="btn ver-canciones">Ver Canciones</button>
+                </article>
+
+                <article class="tarjeta-artista" data-artista="aitana">
+                    <h3>Aitana</h3>
+                    <p class="subtitulo">Pop</p>
+                    <p>Sonido juvenil y moderno.</p>
+                    <button class="btn ver-canciones">Ver Canciones</button>
+                </article>
+
+                <article class="tarjeta-artista" data-artista="hakuna">
+                    <h3>Hakuna Group Music</h3>
+                    <p class="subtitulo">Pop Alternativo</p>
+                    <p>Música con mucha vibra y mensaje.</p>
+                    <button class="btn ver-canciones">Ver Canciones</button>
+                </article>
+
+                <article class="tarjeta-artista" data-artista="enrique">
+                    <h3>Enrique Iglesias</h3>
+                    <p class="subtitulo">Pop / Latin</p>
+                    <p>Clásicos románticos e icónicos.</p>
+                    <button class="btn ver-canciones">Ver Canciones</button>
+                </article>
+
+                <article class="tarjeta-artista" data-artista="dvicio">
+                    <h3>Dvicio</h3>
+                    <p class="subtitulo">Pop / Rock</p>
+                    <p>Estilo moderno con mucha energía.</p>
+                    <button class="btn ver-canciones">Ver Canciones</button>
+                </article>
+            </section>
+        </div>
+
+        <aside id="panel-canciones" class="panel">
+            <button class="cerrar-panel">&times;</button>
+            <div class="contenido-panel">
+                <img id="img-artista" class="panel-img" src="">
+                <h2 id="nombre-artista"></h2>
+                <ul id="lista-canciones"></ul>
+                <a id="spotify-link" class="btn" href="#" target="_blank">Ir al Spotify del artista</a>
+            </div>
+        </aside>
+        
+    </main>
+
+    <script src="js/musica.js"></script>
+
+    <footer>
+        <p>Sígueme en redes:</p>
+        <li class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </li>
+        <p>© 2025 Vanne | Mi pequeño espacio personal</p>
+    </footer>
+
+    <script src="js/general.js"></script>
+</body>
+</html>

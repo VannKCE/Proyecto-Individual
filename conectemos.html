@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conéctate conmigo</title>
-    <link rel="stylesheet" href="../css/conectemos.css">
+    <link rel="stylesheet" href="css/conectemos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <nav>
             <ul class="menu">
                 <li class="titulo">VKCE</li>
-                <li><a href="proyecto.html">INICIO</a></li>
-                <li><a href="#">ACERCA DE</a></li>
-                <li><a href="#">MI BLOG</a></li>
-                <li><a href="musica.html">MÚSICAS</a></li>
-                <li><a href="peliculas.html">PELICULAS</a></li>
-                <li><a href="conectemos.html">EN CONTACTO</a></li>
+                <li><a href="proyecto.html">Inicio</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="miblog.html">Mi blog</a></li>
+                <li><a href="musica.html">Músicas</a></li>
+                <li><a href="peliculas.html">Peliculas</a></li>
+                <li><a href="conectemos.html">En contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <form>
+            <form id="contacForm" action="http://localhost:8000/enviar" method="post">
                 <h2>CONECTATE CONMIGO</h2>
 
                 <label for="nombre">NOMBRE:</label>
@@ -48,7 +49,10 @@
 
                 <button type="submit">Enviar</button>
                 <button type="reset">Restablecer</button>
+
+                <p msgSuccess style="color: green; display: none;"></p>
             </form>
+
         </section>
     </main>
 
@@ -62,5 +66,8 @@
         </li>
         <p>© 2025 Vanne | Mi pequeño espacio personal</p>
     </footer>
+
+    <script src="js/general.js"></script>
+    <script src="js/conectemos.js"></script>
 </body>
 </html>

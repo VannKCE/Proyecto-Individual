@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -36,6 +35,11 @@ nav {
     margin: 0 20px;
     padding: 20px;
     text-transform: uppercase;
+}
+
+nav ul li a.active {
+  color: #000000;
+  font-weight: bolder;
 }
 
 .menu {
@@ -117,7 +121,13 @@ footer {
 .redes a:hover {
     transform: scale(1.2);
     color: #a0a0a0;
+    text-decoration: none;
 }
+
+.fuente-bienvenida { 
+    font-family: 'Playfair Display', serif;
+}
+
 
 @media (max-width: 768px) {
     nav {
