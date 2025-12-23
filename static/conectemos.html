@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conéctate conmigo</title>
-    <link rel="stylesheet" href="css/conectemos.css">
+    <link rel="stylesheet" href="/css/conectemos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -13,26 +13,29 @@
         <nav>
             <ul class="menu">
                 <li class="titulo">VKCE</li>
-                <li><a href="proyecto.html">Inicio</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="miblog.html">Mi blog</a></li>
-                <li><a href="musica.html">Músicas</a></li>
-                <li><a href="peliculas.html">Peliculas</a></li>
-                <li><a href="conectemos.html">En contacto</a></li>
+                <li><a href="/home">Inicio</a></li>
+                <li><a href="/hobbies">Hobbies</a></li>
+                <li><a href="/miblog">Mi blog</a></li>
+                <li><a href="/musica">Música</a></li>
+                <li><a href="/peliculas">Películas</a></li>
+                <li><a href="/conectemos">Conectemos</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <form id="contacForm" action="http://localhost:8000/enviar" method="post">
+            <form id="contacForm" action="/enviar" method="post">
+
                 <h2>CONECTATE CONMIGO</h2>
 
                 <label for="nombre">NOMBRE:</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                <div class="error" id="error-nombre"></div>
 
                 <label for="email">CORREO: </label>
-                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                <div class="error" id="error-email"></div>
 
                 <label for="mood">¿COMO TE SIENTES?</label>
                 <select id="mood" name="mood">
@@ -43,14 +46,16 @@
                     <option value="Motivado">Motivado</option>
                     <option value="Cansado">Cansado</option>
                 </select>
+                <div class="error" id="error-mood"></div>
 
                 <label for="mensaje">CUENTAME ALGO DE TI:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" cols="40" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <div class="error" id="error-mensaje"></div>
 
                 <button type="submit">Enviar</button>
                 <button type="reset">Restablecer</button>
 
-                <p msgSuccess style="color: green; display: none;"></p>
+                <div id="resultado" style="margin-top:10px; font-weight:bold;"></div>
             </form>
 
         </section>
@@ -67,7 +72,8 @@
         <p>© 2025 Vanne | Mi pequeño espacio personal</p>
     </footer>
 
-    <script src="js/general.js"></script>
-    <script src="js/conectemos.js"></script>
+    <script src="/js/formulario.js" defer></script>
+    <script src="/js/general.js"></script>
+
 </body>
 </html>

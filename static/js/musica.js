@@ -153,7 +153,7 @@ cerrar.addEventListener("click", () => {
 });
 
 const img = document.getElementById("img-artista");
-img.onload = () => console.log("IMG cargada ✅");
-img.onerror = (e) => console.log("IMG ERROR ❌", e);
+img.onload = () => console.log("IMG cargada");
+img.onerror = (e) => console.log("IMG ERROR", e);
 const url = "https://lastfm.freetls.fastly.net/i/u/300x300/b4eac8fadb0c4e669f2e2e5c16b0df12.jpg"; // prueba con esta y con otras
 img.src = url;

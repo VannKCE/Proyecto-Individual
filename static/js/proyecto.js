@@ -1,6 +1,5 @@
 let usuario;
 
-// Verificar si ya se mostró la bienvenida
 if (!sessionStorage.getItem("bienvenidaMostrada")) {
     usuario = prompt("Ingrese su nombre:");
 
@@ -16,17 +15,13 @@ if (!sessionStorage.getItem("bienvenidaMostrada")) {
         }
     });
 
-    // Guardar en sessionStorage que ya se mostró
     sessionStorage.setItem("bienvenidaMostrada", "true");
 
-    // También podemos guardar el nombre para usarlo después
     sessionStorage.setItem("usuario", usuario);
 } else {
-    // Si ya se mostró, tomamos el nombre guardado
     usuario = sessionStorage.getItem("usuario");
 }
 
-// Actualizar el texto de la bienvenida
 const bienvenida = document.querySelector(".bienvenida");
 bienvenida.textContent = `Hola ${usuario}, disfruta este pequeño espacio mío.`;
 
