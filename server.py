@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 
 # --- CONFIGURACIÓN ---
-BASE_DIR = os.path.join(os.path.dirname(__file__), "static")
+BASE_DIR = os.path.join(os.path.dirname(__file__))
 
 load_dotenv()
 DB_HOST = os.getenv("DB_HOST")
