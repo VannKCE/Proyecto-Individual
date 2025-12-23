@@ -45,7 +45,7 @@ def serve_static(path):
     """Servir archivos estáticos"""
     # Redirigir "/" y "/home" a proyecto.html
     if path == "/" or path == "/home":
-        path = "/proyecto.html"
+        path = "/index.html"
 
     # Si no tiene extensión, agregar ".html"
     if "." not in os.path.basename(path):
